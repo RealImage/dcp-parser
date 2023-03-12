@@ -2,7 +2,7 @@
   "name": "dcp-parser",
   "version": "1.0.0",
   "description": "Functions to Parse ASSETMAP,PKL,CPL",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs",
   "module":"dist/index.mjs",
   "type": "module",
   "scripts": {
