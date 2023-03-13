@@ -5,6 +5,7 @@
   "main": "dist/index.cjs",
   "module":"dist/index.mjs",
   "type": "module",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c"
