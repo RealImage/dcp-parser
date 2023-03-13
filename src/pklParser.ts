@@ -1,9 +1,13 @@
 import { formatId, INTEROP_PKL_URI, SMTPE_PKL_URI } from "./util"
 import { XMLParser } from 'fast-xml-parser'
 import { PKLObjectInterface } from "./interfaces/pklObject"
-export default function pklParser (pklXML:string)  {
+export default function pklParser (pklXML:string,format: 'raw'|'formatted')  {
      let xmlParser = new XMLParser({ ignoreAttributes: false })
      let pklRawObject = xmlParser.parse(pklXML).PackingList
+     if(format === 'raw')
+     {
+          return pklRawObject
+     }
      let pklObject: Partial<PKLObjectInterface> = {}
         if (pklRawObject["@_xmlns"] == INTEROP_PKL_URI) {
             pklObject.type = "INTEROP"
