@@ -8,7 +8,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c"
+    "build": " rm -r dist && rollup -c"
   },
   "author": "Naveen",
   "license": "ISC",

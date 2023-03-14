@@ -1,7 +1,7 @@
 import { formatId, INTEROP_PKL_URI, SMTPE_PKL_URI } from "./util"
 import { XMLParser } from 'fast-xml-parser'
 import { PKLObjectInterface } from "./interfaces/pklObject"
-export default function pklParser (pklXML:string,format : ('raw'|'formatted')= "formatted")  {
+export default function pklParser (pklXML:string,format : ('raw'|'formatted')= "formatted") : PKLObjectInterface | any {
      let xmlParser = new XMLParser({ ignoreAttributes: false })
      let pklRawObject = xmlParser.parse(pklXML).PackingList
      if(format === 'raw')
@@ -51,5 +51,5 @@ export default function pklParser (pklXML:string,format : ('raw'|'formatted')= "
             })
         }
 
-        return pklObject
+        return pklObject as PKLObjectInterface
 }

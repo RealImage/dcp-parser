@@ -1,2 +1,3 @@
+import { assetMapParser } from "./assetMapParser";
 import pklParser from "./pklParser";
-export { pklParser };
+export { pklParser, assetMapParser };
