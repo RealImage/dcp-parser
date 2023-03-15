@@ -6,6 +6,7 @@ export interface CplObjectInterface {
     creator: string;
     contentKind: string;
     assetList: CPlAssetInterface[];
+    type: string;
 }
 export interface CPlAssetInterface {
     id: string;

@@ -5,7 +5,8 @@ export interface CplObjectInterface {
     issuer:string;
     creator:string;
     contentKind:string;
-    assetList:CPlAssetInterface[]
+    assetList:CPlAssetInterface[],
+    type:string;
 }
 
 export interface CPlAssetInterface {
