@@ -16,12 +16,11 @@ export default function cplParser(cplXMLContent:string,format: 'raw'| 'formatted
      if(cplRawObject.CompositionPlaylist)
      {
             let compositionPlayList = cplRawObject.CompositionPlaylist
-            cplObject.id = compositionPlayList.id
+            cplObject.id = compositionPlayList.Id
             cplObject.annotationText = compositionPlayList.AnnotationText
             cplObject.issueDate = compositionPlayList.IssueDate
             cplObject.issuer = compositionPlayList.Issuer
-            cplObject.creator = compositionPlayList.creator
-            cplObject.contentKind = compositionPlayList.ContentKind
+            cplObject.creator = compositionPlayList.Creator
             cplObject.assetList = []
             cplObject = cplObject as CPlAssetInterface
 
@@ -54,7 +53,7 @@ export default function cplParser(cplXMLContent:string,format: 'raw'| 'formatted
                     })
             }
             else {
-                let assetList = reel.Reel.AssetList
+                let assetList = reel.AssetList
                 for (const  key in assetList )
                 {
                     let asset:Partial<CPlAssetInterface>={}
