@@ -37,7 +37,8 @@ export default function cplParser(cplXMLContent:string,format: 'raw'| 'formatted
                             assetList[key].forEach((as:any)=>{
                                     asset = {
                                             id:formatId(as.Id),
-                                            annotationText:as.AnnotationText
+                                            annotationText:as.AnnotationText,
+                                            sha1Hash:as.Hash,
                                     }
                                     if(cplObject.assetList && cplObject.assetList.findIndex((as)=>as.id === asset.id) >= 0)
                                     cplObject.assetList.push(asset as CPlAssetInterface)
@@ -47,7 +48,8 @@ export default function cplParser(cplXMLContent:string,format: 'raw'| 'formatted
                         if(assetList[key].Id)
                         asset = {
                             id:formatId(assetList[key].Id),
-                            annotationText:assetList[key].AnnotationText
+                            annotationText:assetList[key].AnnotationText,
+                            sha1Hash:assetList[key].Hash,
                         }
                         if(cplObject.assetList && cplObject.assetList.findIndex((as)=>as.id === asset.id) < 0)
                                     cplObject.assetList.push(asset as CPlAssetInterface)
@@ -64,7 +66,8 @@ export default function cplParser(cplXMLContent:string,format: 'raw'| 'formatted
                         assetList[key].forEach((as:any)=>{
                                 asset = {
                                         id:formatId(as.Id),
-                                        annotationText:as.AnnotationText
+                                        annotationText:as.AnnotationText,
+                                        sha1Hash:as.Hash,
                                 }
                                 if(cplObject.assetList && cplObject.assetList.findIndex((as)=>as.id === asset.id) < 0)
                                 cplObject.assetList.push(asset as CPlAssetInterface)
@@ -75,7 +78,8 @@ export default function cplParser(cplXMLContent:string,format: 'raw'| 'formatted
                     {
                     asset = {
                         id:formatId(assetList[key].Id),
-                        annotationText:assetList[key].AnnotationText
+                        annotationText:assetList[key].AnnotationText,
+                        sha1Hash:assetList[key].Hash,
                     }
                         if(cplObject.assetList && cplObject.assetList.findIndex((as)=>as.id === asset.id) < 0)
                             cplObject.assetList.push(asset as CPlAssetInterface)

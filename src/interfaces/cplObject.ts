@@ -12,4 +12,5 @@ export interface CplObjectInterface {
 export interface CPlAssetInterface {
     id:string;
     annotationText:string;
+    sha1Hash:string;
 }
