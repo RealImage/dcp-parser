@@ -16,17 +16,32 @@ export default function pklParser (pklXML:string,format : ('raw'|'formatted')= "
             pklObject.issueDate = pklRawObject.IssueDate
             pklObject.issuer = pklRawObject.Issuer
             pklObject.creator = pklRawObject.Creator
-            pklObject.assetList = pklRawObject.AssetList.Asset.map((asset:any)=> {
-                return {
+            if(Array.isArray(pklRawObject.AssetList.Asset)){
+               pklObject.assetList = pklRawObject.AssetList.Asset.map((asset:any)=> {
+                    return {
+                        id: formatId(asset.Id),
+                        annotationText: asset.AnnotationText,
+                        hash: asset.Hash,
+                        size: asset.Size,
+                        type: asset.Type
+    
+    
+                    }
+                })
+
+            }
+            else{
+               let asset = pklRawObject.AssetList.Asset
+               pklObject.assetList = []
+               pklObject.assetList.push({
                     id: formatId(asset.Id),
-                    annotationText: asset.AnnotationText,
-                    hash: asset.Hash,
-                    size: asset.Size,
-                    type: asset.Type
-
-
-                }
-            })
+                        annotationText: asset.AnnotationText,
+                        hash: asset.Hash,
+                        size: asset.Size,
+                        type: asset.Type
+               })
+            }
+            
 
         }
         else if (pklRawObject["@_xmlns"] == SMTPE_PKL_URI) {
@@ -37,6 +52,7 @@ export default function pklParser (pklXML:string,format : ('raw'|'formatted')= "
             pklObject.issueDate = pklRawObject.IssueDate
             pklObject.issuer = pklRawObject.Issuer
             pklObject.creator = pklRawObject.Creator
+            if(Array.isArray(pklRawObject.AssetList.Asset)){
             pklObject.assetList = pklRawObject.AssetList.Asset.map((asset:any) => {
                 return {
                     id: formatId(asset.Id),
@@ -49,6 +65,18 @@ export default function pklParser (pklXML:string,format : ('raw'|'formatted')= "
                 }
 
             })
+          }
+          else {
+               let asset = pklRawObject.AssetList.Asset
+               pklObject.assetList = []
+               pklObject.assetList.push({
+                    id: formatId(asset.Id),
+                        annotationText: asset.AnnotationText,
+                        hash: asset.Hash,
+                        size: asset.Size,
+                        type: asset.Type
+               })
+          }
         }
 
         return pklObject as PKLObjectInterface
