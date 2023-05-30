@@ -10,5 +10,6 @@ export interface AssetMapObject {
 interface Asset {
 	id: string;
 	annotationText: string;
-	path:string | string[]
+	path:string | string[];
+	packingList?:boolean
 }

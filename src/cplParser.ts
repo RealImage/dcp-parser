@@ -6,7 +6,7 @@ import { INTEROP_CPL_URI,SMTPE_CPL_URI } from "./util";
 export default function cplParser(cplXMLContent:string,format: 'raw'| 'formatted' = 'formatted') :CplObjectInterface
 {
 
-    let xmlParser = new XMLParser({ ignoreAttributes: false })
+    let xmlParser = new XMLParser()
      let cplRawObject = xmlParser.parse(cplXMLContent)
      let cplObject:Partial<CplObjectInterface> = {}
      if(format === 'raw')
@@ -89,6 +89,8 @@ export default function cplParser(cplXMLContent:string,format: 'raw'| 'formatted
             }
             
      }
+      xmlParser = new XMLParser({ignoreAttributes:false})
+      cplRawObject = xmlParser.parse(cplXMLContent)
      if(cplRawObject["@_xmlns"] == INTEROP_CPL_URI)
      {
         cplObject.type = 'INTEROP'

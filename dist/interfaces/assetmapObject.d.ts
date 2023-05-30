@@ -11,5 +11,6 @@ interface Asset {
     id: string;
     annotationText: string;
     path: string | string[];
+    packingList?: boolean;
 }
 export {};
