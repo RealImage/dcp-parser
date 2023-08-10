@@ -1,6 +1,7 @@
-import { formatId, INTEROP_PKL_URI, SMTPE_PKL_URI } from './util';
+import { formatId, INTEROP_PKL_URI, SMPTE_PKL_URI } from './util';
 import { XMLParser } from 'fast-xml-parser';
 import { PKLObjectInterface } from './interfaces/pklObject';
+import { dcpType } from './enums';
 export default function pklParser(
 	pklXML: string,
 	format: 'raw' | 'formatted' = 'formatted'
@@ -12,7 +13,7 @@ export default function pklParser(
 	}
 	let pklObject: Partial<PKLObjectInterface> = {};
 	if (pklRawObject['@_xmlns'] == INTEROP_PKL_URI) {
-		pklObject.type = 'INTEROP';
+		pklObject.type = dcpType.INTEROP;
 		xmlParser = new XMLParser();
 		pklRawObject = xmlParser.parse(pklXML).PackingList;
 		pklObject.id = formatId(pklRawObject.Id);
@@ -41,8 +42,8 @@ export default function pklParser(
 				type: asset.Type,
 			});
 		}
-	} else if (pklRawObject['@_xmlns'] == SMTPE_PKL_URI) {
-		pklObject.type = 'SMTPE';
+	} else if (pklRawObject['@_xmlns'] == SMPTE_PKL_URI) {
+		pklObject.type = dcpType.SMPTE;
 		xmlParser = new XMLParser();
 		pklRawObject = xmlParser.parse(pklXML).PackingList;
 		pklObject.id = formatId(pklRawObject.Id);
