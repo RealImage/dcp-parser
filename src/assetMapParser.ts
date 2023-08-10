@@ -1,11 +1,12 @@
 import { XMLParser } from 'fast-xml-parser';
 import { AssetMapObject } from './interfaces/assetmapObject';
-import { formatId, INTEROP_ASSETMAP_URI, SMTPE_ASSETMAP_URI } from './util';
+import { formatId, INTEROP_ASSETMAP_URI, SMPTE_ASSETMAP_URI } from './util';
+import { dcpType } from './enums';
 
 export function assetMapParser(
 	assetMapXMLString: string,
 	format: 'raw' | 'formatted' = 'formatted'
-): AssetMapObject | any {
+): AssetMapObject  {
 	let xmlParser = new XMLParser({ ignoreAttributes: false });
 	let assetRawObject = xmlParser.parse(assetMapXMLString).AssetMap;
 	let assetObject: Partial<AssetMapObject> = {};
@@ -13,7 +14,7 @@ export function assetMapParser(
 		return assetRawObject;
 	}
 	if (assetRawObject['@_xmlns'] == INTEROP_ASSETMAP_URI) {
-		assetObject.type = 'INTEROP';
+		assetObject.type = dcpType.INTEROP;
 		xmlParser = new XMLParser();
 		assetRawObject = xmlParser.parse(assetMapXMLString).AssetMap;
 		assetObject.id = formatId(assetRawObject.Id);
@@ -31,8 +32,8 @@ export function assetMapParser(
 				...(asset.PackingList ? { packingList: asset.PackingList } : {}),
 			};
 		});
-	} else if (assetRawObject['@_xmlns'] == SMTPE_ASSETMAP_URI) {
-		assetObject.type = 'SMTPE';
+	} else if (assetRawObject['@_xmlns'] == SMPTE_ASSETMAP_URI) {
+		assetObject.type = dcpType.SMPTE;
 		xmlParser = new XMLParser();
 		assetRawObject = xmlParser.parse(assetMapXMLString).AssetMap;
 		assetObject.id = formatId(assetRawObject.Id);
