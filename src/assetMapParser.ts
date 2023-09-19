@@ -29,8 +29,8 @@ export function assetMapParser(
 				path: Array.isArray(asset.ChunkList)
 					? asset.ChunkList.map((chunk: any) => chunk.Chunk.Path)
 					: asset.ChunkList.Chunk.Path,
-				...(asset.PackingList ? { packingList: asset.PackingList } : {}),
-			};
+					...(asset.hasOwnProperty("PackingList") ? { packingList: true } : {}),
+				};
 		});
 	} else if (assetRawObject['@_xmlns'] == SMPTE_ASSETMAP_URI) {
 		assetObject.type = dcpType.SMPTE;
