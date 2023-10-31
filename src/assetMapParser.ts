@@ -25,7 +25,7 @@ export function assetMapParser(
 		assetObject.assetList = assetRawObject.AssetList.Asset.map((asset: any) => {
 			const path =  Array.isArray(asset.ChunkList)
 			? asset.ChunkList.map((chunk: any) => chunk.Chunk.Path)
-			: asset.ChunkList.Chunk.Path;
+			: [asset.ChunkList.Chunk.Path];
 			return {
 				id: formatId(asset.Id),
 				annotationText: asset.AnnotationText,
