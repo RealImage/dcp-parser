@@ -23,14 +23,17 @@ export function assetMapParser(
 		assetObject.issuer = assetRawObject.Issuer;
 		assetObject.creator = assetRawObject.Creator;
 		assetObject.assetList = assetRawObject.AssetList.Asset.map((asset: any) => {
+			const pathName =  Array.isArray(asset.ChunkList)
+			? asset.ChunkList.map((chunk: any) => chunk.Chunk.Path)
+			: [asset.ChunkList.Chunk.Path];
 			return {
 				id: formatId(asset.Id),
 				annotationText: asset.AnnotationText,
 				path: Array.isArray(asset.ChunkList)
-					? asset.ChunkList.map((chunk: any) => chunk.Chunk.Path)
-					: asset.ChunkList.Chunk.Path,
-				...(asset.PackingList ? { packingList: asset.PackingList } : {}),
-			};
+				? asset.ChunkList.map((chunk: any) => chunk.Chunk.Path)
+				: asset.ChunkList.Chunk.Path,
+				...(asset.hasOwnProperty("PackingList") ||pathName.some((fileName: string)=> fileName.includes(".pkl.xml"))? { packingList: true } : {}),
+				};
 		});
 	} else if (assetRawObject['@_xmlns'] == SMPTE_ASSETMAP_URI) {
 		assetObject.type = dcpType.SMPTE;
@@ -42,13 +45,16 @@ export function assetMapParser(
 		assetObject.issuer = assetRawObject.Issuer;
 		assetObject.creator = assetRawObject.Creator;
 		assetObject.assetList = assetRawObject.AssetList.Asset.map((asset: any) => {
+			const pathName =  Array.isArray(asset.ChunkList)
+			? asset.ChunkList.map((chunk: any) => chunk.Chunk.Path)
+			: [asset.ChunkList.Chunk.Path];
 			return {
 				id: formatId(asset.Id),
 				annotationText: asset.AnnotationText,
 				path: Array.isArray(asset.ChunkList)
-					? asset.ChunkList.map((chunk: any) => chunk.Chunk.Path)
-					: asset.ChunkList.Chunk.Path,
-				...(asset.PackingList ? { packingList: asset.PackingList } : {}),
+				? asset.ChunkList.map((chunk: any) => chunk.Chunk.Path)
+				: asset.ChunkList.Chunk.Path,
+				...(asset.PackingList == true || pathName.some((fileName: string)=> fileName.includes(".pkl.xml")) ? { packingList: true } : {}),
 			};
 		});
 	}
