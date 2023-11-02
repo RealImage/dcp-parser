@@ -13,6 +13,6 @@ interface Asset {
     hash: string;
     size: number;
     type: string;
-    isCpl: boolean;
+    isCpl?: boolean;
 }
 export {};

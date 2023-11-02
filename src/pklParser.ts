@@ -29,6 +29,7 @@ export default function pklParser(
 					hash: asset.Hash,
 					size: asset.Size,
 					type: asset.Type,
+					isCpl: asset.Type == 'text/xml;asdcpKind=CPL'? true : false,
 				};
 			});
 		} else {
@@ -40,7 +41,7 @@ export default function pklParser(
 				hash: asset.Hash,
 				size: asset.Size,
 				type: asset.Type,
-				isCpl: asset.Type == 'text/xml;asdcpKind=CPL',
+				isCpl: asset.Type == 'text/xml;asdcpKind=CPL'? true : false,
 			});
 		}
 	} else if (pklRawObject['@_xmlns'] == SMPTE_PKL_URI) {
@@ -60,6 +61,7 @@ export default function pklParser(
 					hash: asset.Hash,
 					size: asset.Size,
 					type: asset.Type,
+					isCpl: asset.Type == 'text/xml'? true : false,
 				};
 			});
 		} else {
@@ -71,7 +73,7 @@ export default function pklParser(
 				hash: asset.Hash,
 				size: asset.Size,
 				type: asset.Type,
-				isCpl: asset.Type == 'text/xml',
+				isCpl: asset.Type == 'text/xml'? true : false,
 			});
 		}
 	}
