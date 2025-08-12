@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PackingList xmlns="http://www.smpte-ra.org/schemas/429-8/2007/PKL">
+  <Id>urn:uuid:b9e65192-a7c5-48ef-8dd9-1a3336590750</Id>
+  <AnnotationText>BAJIRAO-MASTANI_TLR-2_HDR-300_S_HI-XX_IN-U_51_4K_ST_20220810_QUB_SMPTE_OV</AnnotationText>
+  <IssueDate>2022-08-10T02:58:57-00:00</IssueDate>
+  <Issuer>REALIMAGE</Issuer>
+  <Creator>Colorfront Transkoder 2022 build53051</Creator>
+  <AssetList>
+    <Asset>
+      <Id>urn:uuid:7d217943-7ffb-4f1c-82b2-6b32e0addc71</Id>
+      <AnnotationText>BAJIRAO-MASTANI_TLR-2_HDR-300_S_HI-XX_IN-U_51_4K_ST_20220810_QUB_SMPTE_OV_01.mxf</AnnotationText>
+      <Hash>icNWM9duRqXKikZpmG4NGaRSb7o=</Hash>
+      <Size>4802461815</Size>
+      <Type>application/mxf</Type>
+      <OriginalFileName>BAJIRAO-MASTANI_TLR-2_HDR-300_S_HI-XX_IN-U_51_4K_ST_20220810_QUB_SMPTE_OV_01.mxf</OriginalFileName>
+    </Asset>
+    <Asset>
+      <Id>urn:uuid:2ec00d90-0dc9-44ba-bd06-e3e970191e6a</Id>
+      <AnnotationText>BAJIRAO-MASTANI_TLR-2_HDR-300_S_HI-XX_IN-U_51_4K_ST_20220810_QUB_SMPTE_OV_01_audio.mxf</AnnotationText>
+      <Hash>3GB2DgRj4g4KhJIDKBis2QtoIY0=</Hash>
+      <Size>328428046</Size>
+      <Type>application/mxf</Type>
+      <OriginalFileName>BAJIRAO-MASTANI_TLR-2_HDR-300_S_HI-XX_IN-U_51_4K_ST_20220810_QUB_SMPTE_OV_01_audio.mxf</OriginalFileName>
+    </Asset>
+    <Asset>
+      <Id>urn:uuid:753101e2-6bd3-4888-9527-2fc034e58dc1</Id>
+      <AnnotationText>CPL_BAJIRAO-MASTANI_TLR-2_HDR-300_S_HI-XX_IN-U_51_4K_ST_20220810_QUB_SMPTE_OV.xml</AnnotationText>
+      <Hash>TcToPNdaFpWJeQPItULmXmcpyRk=</Hash>
+      <Size>10578</Size>
+      <Type>text/xml</Type>
+      <OriginalFileName>CPL_BAJIRAO-MASTANI_TLR-2_HDR-300_S_HI-XX_IN-U_51_4K_ST_20220810_QUB_SMPTE_OV.xml</OriginalFileName>
+    </Asset>
+  </AssetList>
+</PackingList>

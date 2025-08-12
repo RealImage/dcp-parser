@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompositionPlaylist xmlns="http://www.smpte-ra.org/schemas/429-7/2006/CPL">
+  <Id>urn:uuid:753101e2-6bd3-4888-9527-2fc034e58dc1</Id>
+  <AnnotationText>BAJIRAO-MASTANI_TLR-2_HDR-300_S_HI-XX_IN-U_51_4K_ST_20220810_QUB_SMPTE_OV</AnnotationText>
+  <IssueDate>2022-08-10T02:58:57-00:00</IssueDate>
+  <Issuer>REALIMAGE</Issuer>
+  <Creator>Colorfront Transkoder 2022 build53051</Creator>
+  <ContentTitleText>BAJIRAO-MASTANI_TLR-2_HDR-300_S_HI-XX_IN-U_51_4K_ST_20220810_QUB_SMPTE_OV</ContentTitleText>
+  <ContentKind>trailer</ContentKind>
+  <ContentVersion>
+    <Id>urn:uuid:d473d20e-65f0-44e6-8a83-88cb77f0c524</Id>
+    <LabelText>BAJIRAO-MASTANI_TLR-2_HDR-300_S_HI-XX_IN-U_51_4K_ST_20220810_QUB_SMPTE_OV</LabelText>
+  </ContentVersion>
+  <RatingList>
+    <Rating>
+      <Agency>NA</Agency>
+      <Label>NA</Label>
+    </Rating>
+  </RatingList>
+  <ReelList>
+    <Reel>
+      <Id>urn:uuid:4cdb0d3e-48e9-459d-8da6-ad6f538931b6</Id>
+      <AssetList>
+        <MainPicture>
+          <Id>urn:uuid:7d217943-7ffb-4f1c-82b2-6b32e0addc71</Id>
+          <AnnotationText>BAJIRAO-MASTANI_TLR-2_HDR-300_S_HI-XX_IN-U_51_4K_ST_20220810_QUB_SMPTE_OV_01.mxf</AnnotationText>
+          <EditRate>24 1</EditRate>
+          <IntrinsicDuration>4560</IntrinsicDuration>
+          <EntryPoint>0</EntryPoint>
+          <Duration>4560</Duration>
+          <Hash>icNWM9duRqXKikZpmG4NGaRSb7o=</Hash>
+          <FrameRate>24 1</FrameRate>
+          <ScreenAspectRatio>4096 1716</ScreenAspectRatio>
+        </MainPicture>
+        <MainSound>
+          <Id>urn:uuid:2ec00d90-0dc9-44ba-bd06-e3e970191e6a</Id>
+          <AnnotationText>BAJIRAO-MASTANI_TLR-2_HDR-300_S_HI-XX_IN-U_51_4K_ST_20220810_QUB_SMPTE_OV_01_audio.mxf</AnnotationText>
+          <EditRate>24 1</EditRate>
+          <IntrinsicDuration>4560</IntrinsicDuration>
+          <EntryPoint>0</EntryPoint>
+          <Duration>4560</Duration>
+          <Hash>3GB2DgRj4g4KhJIDKBis2QtoIY0=</Hash>
+          <Language>hi</Language>
+        </MainSound>
+        <CompositionMetadataAsset xmlns="http://www.smpte-ra.org/schemas/429-16/2014/CPL-Metadata" xmlns:cpl="http://www.smpte-ra.org/schemas/429-7/2006/CPL">
+          <cpl:Id>urn:uuid:398deaa5-3b73-4355-8df3-9b174cbfce9f</cpl:Id>
+          <cpl:EditRate>24 1</cpl:EditRate>
+          <cpl:IntrinsicDuration>4560</cpl:IntrinsicDuration>
+          <FullContentTitleText language="en">BAJIRAO-MASTANI_TLR-2_HDR-300_S_HI-XX_IN-U_51_4K_ST_20220810_QUB_SMPTE_OV</FullContentTitleText>
+          <ReleaseTerritory>IN</ReleaseTerritory>
+          <VersionNumber status="final">2</VersionNumber>
+          <Chain>All</Chain>
+          <Distributor>REALIMAGE</Distributor>
+          <Facility>QUBE</Facility>
+          <Luminance units="foot-lambert">14</Luminance>
+          <MainSoundConfiguration>71/L,R,C,LFE,Lss,Rss,-,-,-,-,Lrs,Rrs</MainSoundConfiguration>
+          <MainSoundSampleRate>48000 1</MainSoundSampleRate>
+          <MainPictureStoredArea>
+            <Width>4096</Width>
+            <Height>1716</Height>
+          </MainPictureStoredArea>
+          <MainPictureActiveArea>
+            <Width>4096</Width>
+            <Height>1716</Height>
+          </MainPictureActiveArea>
+          <ExtensionMetadataList>
+            <ExtensionMetadata scope="http://isdcf.com/ns/cplmd/app"><Name>Application</Name>
+              <PropertyList>
+                <Property>
+                  <Name>DCP Constraints Profile</Name>
+                  <Value>SMPTE-RDD-52:2020-Bv2.1</Value>
+                </Property>
+              </PropertyList>
+            </ExtensionMetadata>
+          </ExtensionMetadataList>
+          <mca:MCASubDescriptors xmlns:mca="http://isdcf.com/ns/cplmd/mca" xmlns:r0="http://www.smpte-ra.org/reg/395/2014/13/1/aaf" xmlns:r1="http://www.smpte-ra.org/reg/335/2012" >
+            <r0:SoundfieldGroupLabelSubDescriptor>
+              <r1:InstanceID>urn:uuid:aa630e09-d669-4fdb-aca9-9e023aba9023</r1:InstanceID>
+              <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020202.00000000</r1:MCALabelDictionaryID>
+              <r1:MCALinkID>urn:uuid:811f5510-bf6e-4466-87e4-e9e51da881ab</r1:MCALinkID>
+              <r1:MCATagSymbol>sg71</r1:MCATagSymbol>
+              <r1:MCATagName>7.1DS</r1:MCATagName>
+              <r1:RFC5646SpokenLanguage>hi</r1:RFC5646SpokenLanguage>
+            </r0:SoundfieldGroupLabelSubDescriptor>
+            <r0:AudioChannelLabelSubDescriptor>
+              <r1:InstanceID>urn:uuid:dd6ec448-d027-48d2-b1cb-4b7e911aba67</r1:InstanceID>
+              <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020101.00000000</r1:MCALabelDictionaryID>
+              <r1:MCALinkID>urn:uuid:ba486247-56cf-4bd7-b5e5-3a5678a3b2df</r1:MCALinkID>
+              <r1:MCATagSymbol>chL</r1:MCATagSymbol>
+              <r1:MCATagName>Left</r1:MCATagName>
+              <r1:MCAChannelID>1</r1:MCAChannelID>
+              <r1:RFC5646SpokenLanguage>hi</r1:RFC5646SpokenLanguage>
+              <r1:SoundfieldGroupLinkID>urn:uuid:811f5510-bf6e-4466-87e4-e9e51da881ab</r1:SoundfieldGroupLinkID>
+            </r0:AudioChannelLabelSubDescriptor>
+            <r0:AudioChannelLabelSubDescriptor>
+              <r1:InstanceID>urn:uuid:80faf721-9855-4f46-a826-185782c8b31b</r1:InstanceID>
+              <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020102.00000000</r1:MCALabelDictionaryID>
+              <r1:MCALinkID>urn:uuid:8754759c-ef74-4f5e-9f8b-1263f551352b</r1:MCALinkID>
+              <r1:MCATagSymbol>chR</r1:MCATagSymbol>
+              <r1:MCATagName>Right</r1:MCATagName>
+              <r1:MCAChannelID>2</r1:MCAChannelID>
+              <r1:RFC5646SpokenLanguage>hi</r1:RFC5646SpokenLanguage>
+              <r1:SoundfieldGroupLinkID>urn:uuid:811f5510-bf6e-4466-87e4-e9e51da881ab</r1:SoundfieldGroupLinkID>
+            </r0:AudioChannelLabelSubDescriptor>
+            <r0:AudioChannelLabelSubDescriptor>
+              <r1:InstanceID>urn:uuid:2d183e19-d5de-4764-9730-1e33f642c0ac</r1:InstanceID>
+              <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020103.00000000</r1:MCALabelDictionaryID>
+              <r1:MCALinkID>urn:uuid:7e32ce3f-4f39-4934-b45d-cc2064e30585</r1:MCALinkID>
+              <r1:MCATagSymbol>chC</r1:MCATagSymbol>
+              <r1:MCATagName>Center</r1:MCATagName>
+              <r1:MCAChannelID>3</r1:MCAChannelID>
+              <r1:RFC5646SpokenLanguage>hi</r1:RFC5646SpokenLanguage>
+              <r1:SoundfieldGroupLinkID>urn:uuid:811f5510-bf6e-4466-87e4-e9e51da881ab</r1:SoundfieldGroupLinkID>
+            </r0:AudioChannelLabelSubDescriptor>
+            <r0:AudioChannelLabelSubDescriptor>
+              <r1:InstanceID>urn:uuid:7d9d5290-5cf3-4a88-96bc-0b199fd4e844</r1:InstanceID>
+              <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020104.00000000</r1:MCALabelDictionaryID>
+              <r1:MCALinkID>urn:uuid:304f1ff6-4f79-48e1-b2ed-e761653e1115</r1:MCALinkID>
+              <r1:MCATagSymbol>chLFE</r1:MCATagSymbol>
+              <r1:MCATagName>LFE</r1:MCATagName>
+              <r1:MCAChannelID>4</r1:MCAChannelID>
+              <r1:RFC5646SpokenLanguage>hi</r1:RFC5646SpokenLanguage>
+              <r1:SoundfieldGroupLinkID>urn:uuid:811f5510-bf6e-4466-87e4-e9e51da881ab</r1:SoundfieldGroupLinkID>
+            </r0:AudioChannelLabelSubDescriptor>
+            <r0:AudioChannelLabelSubDescriptor>
+              <r1:InstanceID>urn:uuid:8d4a35b8-ad95-477f-ae02-3346a7e898de</r1:InstanceID>
+              <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020107.00000000</r1:MCALabelDictionaryID>
+              <r1:MCALinkID>urn:uuid:b98c84e9-4b0b-41ad-bd41-e82744a9d22a</r1:MCALinkID>
+              <r1:MCATagSymbol>chLss</r1:MCATagSymbol>
+              <r1:MCATagName>Left Side Surround</r1:MCATagName>
+              <r1:MCAChannelID>5</r1:MCAChannelID>
+              <r1:RFC5646SpokenLanguage>hi</r1:RFC5646SpokenLanguage>
+              <r1:SoundfieldGroupLinkID>urn:uuid:811f5510-bf6e-4466-87e4-e9e51da881ab</r1:SoundfieldGroupLinkID>
+            </r0:AudioChannelLabelSubDescriptor>
+            <r0:AudioChannelLabelSubDescriptor>
+              <r1:InstanceID>urn:uuid:8dba415a-5cce-4792-b12c-4b7905a21a53</r1:InstanceID>
+              <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020108.00000000</r1:MCALabelDictionaryID>
+              <r1:MCALinkID>urn:uuid:de6d848f-1c97-4254-b455-31fbd3eed2c2</r1:MCALinkID>
+              <r1:MCATagSymbol>chRss</r1:MCATagSymbol>
+              <r1:MCATagName>Right Side Surround</r1:MCATagName>
+              <r1:MCAChannelID>6</r1:MCAChannelID>
+              <r1:RFC5646SpokenLanguage>hi</r1:RFC5646SpokenLanguage>
+              <r1:SoundfieldGroupLinkID>urn:uuid:811f5510-bf6e-4466-87e4-e9e51da881ab</r1:SoundfieldGroupLinkID>
+            </r0:AudioChannelLabelSubDescriptor>
+            <r0:AudioChannelLabelSubDescriptor>
+              <r1:InstanceID>urn:uuid:5db09a94-09a9-499a-9310-ca1f99059116</r1:InstanceID>
+              <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.03020109.00000000</r1:MCALabelDictionaryID>
+              <r1:MCALinkID>urn:uuid:fddbe5e1-b320-44a9-8fa5-561c4b28dc6b</r1:MCALinkID>
+              <r1:MCATagSymbol>chLrs</r1:MCATagSymbol>
+              <r1:MCATagName>Left Rear Surround</r1:MCATagName>
+              <r1:MCAChannelID>11</r1:MCAChannelID>
+              <r1:RFC5646SpokenLanguage>hi</r1:RFC5646SpokenLanguage>
+              <r1:SoundfieldGroupLinkID>urn:uuid:811f5510-bf6e-4466-87e4-e9e51da881ab</r1:SoundfieldGroupLinkID>
+            </r0:AudioChannelLabelSubDescriptor>
+            <r0:AudioChannelLabelSubDescriptor>
+              <r1:InstanceID>urn:uuid:16842aba-fdfc-4970-85be-aa1a6e787e11</r1:InstanceID>
+              <r1:MCALabelDictionaryID>urn:smpte:ul:060e2b34.0401010d.0302010a.00000000</r1:MCALabelDictionaryID>
+              <r1:MCALinkID>urn:uuid:5ee0e06d-809e-413c-a26a-f6bb1955f851</r1:MCALinkID>
+              <r1:MCATagSymbol>chRrs</r1:MCATagSymbol>
+              <r1:MCATagName>Right Rear Surround</r1:MCATagName>
+              <r1:MCAChannelID>12</r1:MCAChannelID>
+              <r1:RFC5646SpokenLanguage>hi</r1:RFC5646SpokenLanguage>
+              <r1:SoundfieldGroupLinkID>urn:uuid:811f5510-bf6e-4466-87e4-e9e51da881ab</r1:SoundfieldGroupLinkID>
+            </r0:AudioChannelLabelSubDescriptor>
+          </mca:MCASubDescriptors>
+        </CompositionMetadataAsset>
+      </AssetList>
+    </Reel>
+  </ReelList>
+</CompositionPlaylist>

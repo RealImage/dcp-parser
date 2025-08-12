@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CompositionPlaylist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.digicine.com/PROTO-ASDCP-CPL-20040511#">
+  <Id>urn:uuid:f08c81d5-1f9e-418c-8bbc-8c29c3965749</Id>
+  <AnnotationText>Hetro_Reels</AnnotationText>
+  <IssueDate>2010-11-02T12:37:58+05:30</IssueDate>
+  <Issuer>Qube</Issuer>
+  <Creator>QubeMaster Pro 2.3.2.389</Creator>
+  <ContentTitleText>Hetro_Reels_TST_S_EN-XX_2K_ST_20101102_FAC_OV</ContentTitleText>
+  <ContentKind scope="http://www.digicine.com/PROTO-ASDCP-CPL-20040511#standard-content">test</ContentKind>
+  <ContentVersion>
+    <Id>urn:uuid:935bf795-cbc0-412f-9da0-aae18b6b7146</Id>
+    <LabelText>Hetro_Reels (Original)</LabelText>
+  </ContentVersion>
+  <RatingList />
+  <ReelList>
+    <Reel>
+      <Id>urn:uuid:a39962c5-d002-4102-b1cf-ac6710790215</Id>
+      <AnnotationText>Hetro_Reels-reel-1</AnnotationText>
+      <AssetList>
+        <MainPicture>
+          <Id>urn:uuid:3dbf20b2-19f1-4668-9c25-3484e2126d74</Id>
+          <AnnotationText>Hetro_Reels-reel-1-jp2k.mxf</AnnotationText>
+          <EditRate>24 1</EditRate>
+          <IntrinsicDuration>120</IntrinsicDuration>
+          <EntryPoint>0</EntryPoint>
+          <Duration>120</Duration>
+          <Hash>0zwV9NYwrNUFH04JpWKYfdMi2Us=</Hash>
+          <FrameRate>24 1</FrameRate>
+          <ScreenAspectRatio scope="http://www.digicine.com/PROTO-ASDCP-CPL-20040511#standard-aspectratio">2.39</ScreenAspectRatio>
+        </MainPicture>
+      </AssetList>
+    </Reel>
+    <Reel>
+      <Id>urn:uuid:357f5e32-cffb-49f0-b89b-a4b94df37d3d</Id>
+      <AnnotationText>Hetro_Reels-reel-2</AnnotationText>
+      <AssetList>
+        <MainPicture>
+          <Id>urn:uuid:a89b1229-6989-42a7-90b1-acfc6effb757</Id>
+          <AnnotationText>Hetro_Reels-reel-2-jp2k.mxf</AnnotationText>
+          <EditRate>24 1</EditRate>
+          <IntrinsicDuration>120</IntrinsicDuration>
+          <EntryPoint>0</EntryPoint>
+          <Duration>120</Duration>
+          <Hash>DkENLJbJuTGubCs6IrZRqopnRb8=</Hash>
+          <FrameRate>24 1</FrameRate>
+          <ScreenAspectRatio scope="http://www.digicine.com/PROTO-ASDCP-CPL-20040511#standard-aspectratio">2.39</ScreenAspectRatio>
+        </MainPicture>
+      </AssetList>
+    </Reel>
+    <Reel>
+      <Id>urn:uuid:7e5e57d7-8a86-418d-af9d-60cff4eb3ab0</Id>
+      <AnnotationText>Hetro_Reels-reel-3</AnnotationText>
+      <AssetList>
+        <MainPicture>
+          <Id>urn:uuid:2d756eb5-d391-4995-8d12-6400515e4c33</Id>
+          <AnnotationText>Hetro_Reels-reel-3-jp2k.mxf</AnnotationText>
+          <EditRate>24 1</EditRate>
+          <IntrinsicDuration>120</IntrinsicDuration>
+          <EntryPoint>0</EntryPoint>
+          <Duration>120</Duration>
+          <Hash>nym532GqE51euz/MGdygUF+35xY=</Hash>
+          <FrameRate>24 1</FrameRate>
+          <ScreenAspectRatio scope="http://www.digicine.com/PROTO-ASDCP-CPL-20040511#standard-aspectratio">2.39</ScreenAspectRatio>
+        </MainPicture>
+      </AssetList>
+    </Reel>
+    <Reel>
+      <Id>urn:uuid:fcd8f121-f04e-419f-8950-b818a77c868d</Id>
+      <AnnotationText>Hetro_Reels-reel-4</AnnotationText>
+      <AssetList>
+        <MainPicture>
+          <Id>urn:uuid:5f1f8f4a-4e8b-479d-bfa2-947622d58052</Id>
+          <AnnotationText>Hetro_Reels-reel-4-jp2k.mxf</AnnotationText>
+          <EditRate>24 1</EditRate>
+          <IntrinsicDuration>120</IntrinsicDuration>
+          <EntryPoint>0</EntryPoint>
+          <Duration>120</Duration>
+          <Hash>idaFG5rDbbNjPk8dHNHJtfZvxbs=</Hash>
+          <FrameRate>24 1</FrameRate>
+          <ScreenAspectRatio scope="http://www.digicine.com/PROTO-ASDCP-CPL-20040511#standard-aspectratio">2.39</ScreenAspectRatio>
+        </MainPicture>
+      </AssetList>
+    </Reel>
+    <Reel>
+      <Id>urn:uuid:1dde5ef3-daf7-4454-9fdb-5d19b0953c26</Id>
+      <AnnotationText>Hetro_Reels-reel-5</AnnotationText>
+      <AssetList>
+        <MainPicture>
+          <Id>urn:uuid:086b357d-0536-4548-8e06-d2561aba0495</Id>
+          <AnnotationText>Hetro_Reels-reel-5-jp2k.mxf</AnnotationText>
+          <EditRate>24 1</EditRate>
+          <IntrinsicDuration>120</IntrinsicDuration>
+          <EntryPoint>0</EntryPoint>
+          <Duration>120</Duration>
+          <Hash>se7BOl+iNcXW7q25QDWffBr+yvY=</Hash>
+          <FrameRate>24 1</FrameRate>
+          <ScreenAspectRatio scope="http://www.digicine.com/PROTO-ASDCP-CPL-20040511#standard-aspectratio">2.39</ScreenAspectRatio>
+        </MainPicture>
+      </AssetList>
+    </Reel>
+    <Reel>
+      <Id>urn:uuid:5edd387e-dc24-4403-bbb2-581bf1087b63</Id>
+      <AnnotationText>Hetro_Reels-reel-6</AnnotationText>
+      <AssetList>
+        <MainPicture>
+          <Id>urn:uuid:2e2a4974-1ef1-4a75-9ff8-8c4ff8f0372f</Id>
+          <AnnotationText>Hetro_Reels-reel-6-jp2k.mxf</AnnotationText>
+          <EditRate>24 1</EditRate>
+          <IntrinsicDuration>120</IntrinsicDuration>
+          <EntryPoint>0</EntryPoint>
+          <Duration>120</Duration>
+          <Hash>f0KDQ5NRu6MkbpLs+ta0MjZwk58=</Hash>
+          <FrameRate>24 1</FrameRate>
+          <ScreenAspectRatio scope="http://www.digicine.com/PROTO-ASDCP-CPL-20040511#standard-aspectratio">2.39</ScreenAspectRatio>
+        </MainPicture>
+      </AssetList>
+    </Reel>
+  </ReelList>
+</CompositionPlaylist>

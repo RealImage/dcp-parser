@@ -8,7 +8,7 @@ export interface PKLObjectInterface {
 	creator: string;
 }
 
-interface Asset {
+export interface Asset {
 	id: string;
 	annotationText: string;
 	hash: string;

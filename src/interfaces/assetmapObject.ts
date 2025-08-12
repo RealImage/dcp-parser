@@ -2,14 +2,14 @@ export interface AssetMapObject {
     type:string,
     id: string;
 	annotationText: string;
-	assetList: Asset[];
+	assetList: AssetMapAsset[];
 	issueDate: string;
 	issuer: string;
 	creator: string;
 }
-interface Asset {
+export interface AssetMapAsset {
 	id: string;
-	annotationText: string;
+	annotationText: string | undefined;
 	path:string | string[];
 	packingList?:boolean
 }

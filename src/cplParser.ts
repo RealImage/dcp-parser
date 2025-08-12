@@ -22,6 +22,7 @@ export default function cplParser(
 		cplObject.issuer = compositionPlayList.Issuer;
 		cplObject.creator = compositionPlayList.Creator;
 		cplObject.assetList = [];
+		cplObject.contentKind = compositionPlayList.ContentKind
 		cplObject = cplObject as CPlAssetInterface;
 
 		let reel = compositionPlayList.ReelList.Reel;
