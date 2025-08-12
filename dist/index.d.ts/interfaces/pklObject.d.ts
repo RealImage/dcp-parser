@@ -7,7 +7,7 @@ export interface PKLObjectInterface {
     issuer: string;
     creator: string;
 }
-interface Asset {
+export interface Asset {
     id: string;
     annotationText: string;
     hash: string;
@@ -15,4 +15,3 @@ interface Asset {
     type: string;
     isCpl?: boolean;
 }
-export {};
